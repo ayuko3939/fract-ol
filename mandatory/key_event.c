@@ -6,7 +6,7 @@
 /*   By: yohasega <yohasega@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/24 20:55:36 by yohasega          #+#    #+#             */
-/*   Updated: 2024/08/26 10:43:01 by yohasega         ###   ########.fr       */
+/*   Updated: 2025/04/19 14:50:01 by yohasega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static void	key_zoom(int key, t_fractol *f)
 		f->min_r += width / 10;
 		f->max_i -= height / 10;
 		f->min_i += height / 10;
-		f->max_iter += 2;
+		f->max_iter += 2;	// 計算回数の上限を加算
 	}
 	if (key == 'x')
 	{
@@ -43,7 +43,7 @@ static void	key_zoom(int key, t_fractol *f)
 		f->max_i += height / 10;
 		f->min_i -= height / 10;
 		if (f->max_iter > 30)
-			f->max_iter -= 2;
+			f->max_iter -= 2;	// 計算回数の下限を設定
 	}
 }
 

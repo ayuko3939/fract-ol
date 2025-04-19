@@ -6,7 +6,7 @@
 /*   By: yohasega <yohasega@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 13:39:10 by yohasega          #+#    #+#             */
-/*   Updated: 2024/08/25 13:21:02 by yohasega         ###   ########.fr       */
+/*   Updated: 2025/04/19 14:47:20 by yohasega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ double	ft_atof(const char *str)
 
 	nmb = 0;
 	sign = 1;
+	// remove space ( 9:\t  10:\n  11:\v  12:\f  13:\r  32:' ' )
 	while ((*str >= 9 && *str <= 13) || *str == 32)
 		str++;
 	if (*str == '-' || *str == '+')

@@ -6,7 +6,7 @@
 /*   By: yohasega <yohasega@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 19:14:53 by yohasega          #+#    #+#             */
-/*   Updated: 2024/08/25 20:16:14 by yohasega         ###   ########.fr       */
+/*   Updated: 2025/04/19 14:46:53 by yohasega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@
 
 typedef struct s_img
 {
-	void	*img;
-	void	*addr;
-	int		bpp;
-	int		line_size;
-	int		endian;
+	void	*img;		// 画像のメモリアドレス
+	void	*addr;		// 画像の中身のメモリアドレス
+	int		bpp;		// bits_per_pixel : １ピクセルあたりのビット数
+	int		line_size;	// 1行あたりのバイト数
+	int		endian;		// 画像内のピクセルの色順序 0:低位バイトから  1:上位バイトから
 }			t_img;
 
 typedef struct s_fractol
@@ -38,8 +38,8 @@ typedef struct s_fractol
 	void	*mlx;
 	void	*win;
 	int		kind;
-	double	arg_r;
-	double	arg_i;
+	double	arg_r;	// julia real constant
+	double	arg_i;	// julia imaginary constant
 	double	max_r;
 	double	max_i;
 	double	min_r;
