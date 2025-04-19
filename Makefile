@@ -6,7 +6,7 @@
 #    By: yohasega <yohasega@student.42.jp>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/17 16:41:01 by yohasega          #+#    #+#              #
-#    Updated: 2024/08/25 20:53:45 by yohasega         ###   ########.fr        #
+#    Updated: 2025/04/19 14:38:43 by yohasega         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@
 NAME		=	fractol
 
 # Mandatory Source files
-M_SRCS		=	mandatory/fractol.c mandatory/render.c \
+M_SRCS		=	mandatory/main.c mandatory/render.c \
 				mandatory/key_event.c mandatory/mouse_event.c \
 				mandatory/validate.c mandatory/init.c \
 				mandatory/ft_atof.c mandatory/print_msg.c \
 
 # Bonus Source files
-B_SRCS		=	bonus/fractol_bonus.c bonus/render_bonus.c \
+B_SRCS		=	bonus/main_bonus.c bonus/render_bonus.c \
 				bonus/key_event_bonus.c bonus/mouse_event_bonus.c \
 				bonus/validate_bonus.c bonus/init_bonus.c \
 				bonus/ft_atof_bonus.c bonus/print_msg_bonus.c \
